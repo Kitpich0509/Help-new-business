@@ -9,9 +9,11 @@
 <body>
 <main class="card">
 <h1>Support Our Work</h1>
-<p>Your donation helps us continue what we do.</p>
+<p>Choose your preferred donation method below.</p>
 
 
+<section class="method">
+<h2>💳 Stripe (Credit/Debit Card)</h2>
 <label for="amount">Select amount (USD)</label>
 <select id="amount">
 <option value="5">$5</option>
@@ -19,14 +21,49 @@
 <option value="20">$20</option>
 <option value="custom">Custom</option>
 </select>
-
-
 <div id="customAmountBox" style="display:none;">
 <input type="number" id="customAmount" min="1" placeholder="Enter amount" />
 </div>
+<button id="donateStripe">Donate via Stripe</button>
+</section>
 
 
-<button id="donateBtn">Donate</button>
+<hr />
+
+
+<section class="method">
+<h2>💰 PayPal</h2>
+<p>Click below to donate securely via PayPal.</p>
+<a href="https://www.paypal.com/donate/?hosted_button_id=REPLACE_WITH_YOUR_ID" target="_blank">
+<button class="paypal">Donate via PayPal</button>
+</a>
+</section>
+
+
+<hr />
+
+
+<section class="method">
+<h2>🪙 Crypto Donations</h2>
+<p>Send to one of our wallet addresses below:</p>
+<div class="crypto">
+<div>
+<strong>USDT (TRC20):</strong>
+<div class="wallet">TX123YOURUSDTADDRESS</div>
+</div>
+<div>
+<strong>BTC:</strong>
+<div class="wallet">bc1YOURBTCADDRESS</div>
+</div>
+<div>
+<strong>ETH (ERC20):</strong>
+<div class="wallet">0xYOUR_ETH_ADDRESS</div>
+</div>
+</div>
+<p style="font-size:0.9em; color:#555">Click address to copy</p>
+</section>
+
+
 <p id="msg"></p>
 </main>
 
