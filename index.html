@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Support Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+<h1>Support Our Work</h1>
+<p>Your donation helps us continue what we do.</p>
+
+
+<label for="amount">Select amount (USD)</label>
+<select id="amount">
+<option value="5">$5</option>
+<option value="10">$10</option>
+<option value="20">$20</option>
+<option value="custom">Custom</option>
+</select>
+
+
+<div id="customAmountBox" style="display:none;">
+<input type="number" id="customAmount" min="1" placeholder="Enter amount" />
+</div>
+
+
+<button id="donateBtn">Donate</button>
+<p id="msg"></p>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
